@@ -15,10 +15,20 @@
 
 
 #
+# HostName
+#
+
+function rede_hn() {
+
+
+
+}
+
+#
 # Identifica a INET ativa
 #
 function rede_inet() {
-    local rt=`nmcli device | grep 'ether' | cut -d: -f1 | awk '{ print $1 }'`
+    local rt=`nmcli | grep 'eth' | cut -d: -f1 | awk '{ print $1 }'`
     echo "$rt"
 }
 
