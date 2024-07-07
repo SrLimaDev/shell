@@ -3,8 +3,10 @@
 # Programa sem nome
 #
 
+#
 # Variáveis
+#
 
-Dir="$HOME/Dev/scr"
+Dir="$HOME/Dev"
 
-echo $Dir
+echo "$Dir"
